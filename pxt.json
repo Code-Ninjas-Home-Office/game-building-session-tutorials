@@ -8,7 +8,9 @@
         "main.blocks",
         "main.ts",
         "README.md",
-        "assets.json"
+        "assets.json",
+        "find-the-ninja.md",
+        "save-the-computers.md"
     ],
     "testFiles": [
         "test.ts"
