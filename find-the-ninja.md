@@ -19,7 +19,7 @@
 In this tutorial, you will create a game with 3 kinds of sprites: Ninja, Player, and Enemy. The Ninja sprite will be hidden among many Enemy sprites, and you’ll need to use the Player sprite to find it! Click Ok to get started!
 ![Project gif](https://github.com/bmarslandCN/GameBuildingSessions/blob/main/GBS1_resized.gif?raw=true, "Find the Ninja project")
 
-![Code Ninjas logo](https://raw.githubusercontent.com/Code-Ninjas-Home-Office/game-building-session-tutorials/master/images/Code_Ninjas_Color_Horizontal_small.jpg, "Code Ninjas logo")
+![Code Ninjas logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/Code_Ninjas_Color_Horizontal_small.jpg?raw=true, "Code Ninjas logo")
 
 ## Step 1
 Begin the project by setting a background color on the screen!
@@ -32,7 +32,7 @@ Begin the project by setting a background color on the screen!
 
 - :mouse pointer: Click back to the tutorial ![Tutorial icon](https://github.com/bmarslandCN/GameBuildingSessions/blob/main/tutorial_icon_small.png?raw=true "Tutorial icon") then click Next to go to the next step.
 
-![Code Ninjas logo](https://github.com/bmarslandCN/GameBuildingSessions/blob/main/Code_Ninjas_Color_Horizontal.jpg?raw=true "Code Ninjas logo")
+![Code Ninjas logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/Code_Ninjas_Color_Horizontal_small.jpg?raw=true, "Code Ninjas logo")
 
 ```blocks
 scene.setBackgroundColor(7)
@@ -50,7 +50,7 @@ Click the gray box and select the **My Assets** tab at the top. Select the ninja
 
 - :mouse pointer: Click ▶ to see the Ninja sprite appear in the center of the screen!
 
-![Code Ninjas logo](https://github.com/bmarslandCN/GameBuildingSessions/blob/main/Code_Ninjas_Color_Horizontal.jpg?raw=true "Code Ninjas logo")
+![Code Ninjas logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/Code_Ninjas_Color_Horizontal_small.jpg?raw=true, "Code Ninjas logo")
 
 ```blocks
 namespace SpriteKind {export const Ninja = SpriteKind.create()}
@@ -86,7 +86,7 @@ Code the Ninja sprite to appear in a random position!
 
 - :mouse pointer: Click ▶ to see the Ninja sprite appear in a random position on screen!
 
-![Code Ninjas logo](https://github.com/bmarslandCN/GameBuildingSessions/blob/main/Code_Ninjas_Color_Horizontal.jpg?raw=true "Code Ninjas logo")
+![Code Ninjas logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/Code_Ninjas_Color_Horizontal_small.jpg?raw=true, "Code Ninjas logo")
 
 ```blocks
 namespace SpriteKind {export const Ninja = SpriteKind.create()}
@@ -109,7 +109,8 @@ let ninjaSprite = sprites.create(img`
     . . . . f f . f f . . . 
     . . . f f f . f f f . . 
     `, SpriteKind.Ninja)
-ninjaSprite.setPosition(randint(0, 160), randint(0, 120)```
+ninjaSprite.setPosition(randint(0, 160), randint(0, 120)
+```
 
 
 ## Step 4
@@ -123,7 +124,7 @@ Add another sprite to the project!
 
 - :mouse pointer: Click ▶ to see the Enemy sprite appear in a random position on screen!
 
-![Code Ninjas logo](https://github.com/bmarslandCN/GameBuildingSessions/blob/main/Code_Ninjas_Color_Horizontal.jpg?raw=true "Code Ninjas logo")
+![Code Ninjas logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/Code_Ninjas_Color_Horizontal_small.jpg?raw=true, "Code Ninjas logo")
 
 ```blocks
 namespace SpriteKind {export const Ninja = SpriteKind.create()}
@@ -178,7 +179,8 @@ and drag a `||loops:repeat||` ***loop*** to the bottom of the `||loops:on start|
 
 - :mouse pointer:  Click ▶ to see 4 Enemy sprites appear in random positions on screen. Then, tinker with the number in the white bubble of the ``||loops:repeat||`` ***loop*** to create enough Enemy sprites to hide the Ninja sprite.
 
-![Code Ninjas logo](https://github.com/bmarslandCN/GameBuildingSessions/blob/main/Code_Ninjas_Color_Horizontal.jpg?raw=true "Code Ninjas logo")
+![Code Ninjas logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/Code_Ninjas_Color_Horizontal_small.jpg?raw=true, "Code Ninjas logo")
+
 ```blocks
 namespace SpriteKind {export const Ninja = SpriteKind.create()}
 let hidingSprite: Sprite = null
@@ -235,7 +237,7 @@ Create a Player sprite to help locate the Ninja sprite!
 
 - :mouse pointer: Click ▶ to see the Player sprite appear in the center of the screen!
 
-![Code Ninjas logo](https://github.com/bmarslandCN/GameBuildingSessions/blob/main/Code_Ninjas_Color_Horizontal.jpg?raw=true "Code Ninjas logo")
+![Code Ninjas logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/Code_Ninjas_Color_Horizontal_small.jpg?raw=true, "Code Ninjas logo")
 
 ```blocks
 namespace SpriteKind {export const Ninja = SpriteKind.create()}
@@ -301,6 +303,7 @@ let lookingGlass = sprites.create(img`
     `, SpriteKind.Player)
 lookingGlass.setPosition(80, 60)
 ```
+
 ## Step 7
 Code the Player sprite to move around the screen!
 
@@ -312,7 +315,7 @@ Code the Player sprite to move around the screen!
 
 - :mouse pointer: Click ▶ then use the direction buttons to move the Player sprite around the screen.
 
-![Code Ninjas logo](https://github.com/bmarslandCN/GameBuildingSessions/blob/main/Code_Ninjas_Color_Horizontal.jpg?raw=true "Code Ninjas logo")
+![Code Ninjas logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/Code_Ninjas_Color_Horizontal_small.jpg?raw=true, "Code Ninjas logo")
 
 ```blocks
 namespace SpriteKind {export const Ninja = SpriteKind.create()}
@@ -380,6 +383,7 @@ lookingGlass.setPosition(80, 60)
 controller.moveSprite(lookingGlass, 50, 50)
 lookingGlass.setStayInScreen(true)
 ```
+
 ## Step 8
 Code something to happen when the Player sprite finds the Ninja sprite!
 
@@ -387,12 +391,13 @@ Code something to happen when the Player sprite finds the Ninja sprite!
 
 - :mouse pointer: Change the Sprite Kind of the otherSprite by clicking the second ``||sprites:Player ⏷||``. Select **Ninja** from the dropdown. 
 
-![Code Ninjas logo](https://github.com/bmarslandCN/GameBuildingSessions/blob/main/Code_Ninjas_Color_Horizontal.jpg?raw=true "Code Ninjas logo")
+![Code Ninjas logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/Code_Ninjas_Color_Horizontal_small.jpg?raw=true, "Code Ninjas logo")
 
 ```blocks
 namespace SpriteKind {export const Ninja = SpriteKind.create()}
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Ninja, function (sprite, otherSprite) {})
 ```
+
 ## Step 9
 Code the Enemy sprites to disappear when the Player sprite finds the Ninja sprite!
 
@@ -406,7 +411,7 @@ Code the Enemy sprites to disappear when the Player sprite finds the Ninja sprit
 
 - :mouse pointer: Click ▶ to see what happens when the Player sprite overlaps the Ninja sprite on screen!
 
-![Code Ninjas logo](https://github.com/bmarslandCN/GameBuildingSessions/blob/main/Code_Ninjas_Color_Horizontal.jpg?raw=true "Code Ninjas logo")
+![Code Ninjas logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/Code_Ninjas_Color_Horizontal_small.jpg?raw=true, "Code Ninjas logo")
 
 ```blocks
 namespace SpriteKind {export const Ninja = SpriteKind.create()}
@@ -415,6 +420,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Ninja, function (sprite, otherSp
     otherSprite.sayText("You found me!", 2000, true)
 })
 ```
+
 ## Step 10
 Change the Ninja sprite’s size and position once it has been found!
 
@@ -428,7 +434,7 @@ Change the Ninja sprite’s size and position once it has been found!
 
 - :mouse pointer: Click ▶ to see the Ninja sprite grow and change position once overlapped by the Player sprite!
 
-![Code Ninjas logo](https://github.com/bmarslandCN/GameBuildingSessions/blob/main/Code_Ninjas_Color_Horizontal.jpg?raw=true "Code Ninjas logo")
+![Code Ninjas logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/Code_Ninjas_Color_Horizontal_small.jpg?raw=true, "Code Ninjas logo")
 
 ```blocks
 namespace SpriteKind {export const Ninja = SpriteKind.create()}
@@ -439,6 +445,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Ninja, function (sprite, otherSp
     otherSprite.setPosition(80, 60)
 })
 ```
+
 ## Step 11
 Code the project to end once the Ninja has been found!
 
@@ -448,7 +455,7 @@ Code the project to end once the Ninja has been found!
 
 - :mouse pointer: Click ▶ to see the game end in a win once the Player sprite has overlapped the Ninja sprite.
 
-![Code Ninjas logo](https://github.com/bmarslandCN/GameBuildingSessions/blob/main/Code_Ninjas_Color_Horizontal.jpg?raw=true "Code Ninjas logo")
+![Code Ninjas logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/Code_Ninjas_Color_Horizontal_small.jpg?raw=true, "Code Ninjas logo")
 
 ```blocks
 namespace SpriteKind {export const Ninja = SpriteKind.create()}
@@ -471,7 +478,7 @@ Use a countdown ***variable*** to add a challenge to the project!
 
 - :mouse pointer: Click ▶ to try and find the Ninja sprite before the countdown ends!
 
-![Code Ninjas logo](https://github.com/bmarslandCN/GameBuildingSessions/blob/main/Code_Ninjas_Color_Horizontal.jpg?raw=true "Code Ninjas logo")
+![Code Ninjas logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/Code_Ninjas_Color_Horizontal_small.jpg?raw=true, "Code Ninjas logo")
 
 ```blocks
 namespace SpriteKind {
@@ -561,7 +568,7 @@ Add instructions for the user at the beginning of the project!
 
 - :mouse pointer: Click ▶ to see a dialog box appear at the beginning of the project!
 
-![Code Ninjas logo](https://github.com/bmarslandCN/GameBuildingSessions/blob/main/Code_Ninjas_Color_Horizontal.jpg?raw=true "Code Ninjas logo")
+![Code Ninjas logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/Code_Ninjas_Color_Horizontal_small.jpg?raw=true, "Code Ninjas logo")
 
 ```blocks
 namespace SpriteKind {
@@ -671,7 +678,7 @@ Complete the project by adding customizations!
 
 - :mouse pointer: Click ▶ to see the completed project!
 
-![Code Ninjas logo](https://github.com/bmarslandCN/GameBuildingSessions/blob/main/Code_Ninjas_Color_Horizontal.jpg?raw=true "Code Ninjas logo")
+![Code Ninjas logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/Code_Ninjas_Color_Horizontal_small.jpg?raw=true, "Code Ninjas logo")
 
 ```blocks
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Ninja, function (sprite, otherSprite) {
