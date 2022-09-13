@@ -19,7 +19,7 @@
 In this tutorial, you will create a game with 3 kinds of sprites: Ninja, Player, and Enemy. The Ninja sprite will be hidden among many Enemy sprites, and you’ll need to use the Player sprite to find it! Click Ok to get started!
 ![Project gif](https://github.com/bmarslandCN/GameBuildingSessions/blob/main/GBS1_resized.gif?raw=true, "Find the Ninja project")
 
-![Code Ninjas logo](https://github.com/bmarslandCN/GameBuildingSessions/blob/main/Code_Ninjas_Color_Horizontal_small.jpg?raw=true "Code Ninjas logo")
+![Code Ninjas logo](https://raw.githubusercontent.com/Code-Ninjas-Home-Office/game-building-session-tutorials/master/images/Code_Ninjas_Color_Horizontal_small.jpg, "Code Ninjas logo")
 
 ## Step 1
 Begin the project by setting a background color on the screen!
