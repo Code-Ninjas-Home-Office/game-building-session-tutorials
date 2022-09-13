@@ -18,7 +18,7 @@ To edit this repository in MakeCode.
 
 * open [https://arcade.makecode.com/](https://arcade.makecode.com/)
 * click on **Import** then click on **Import URL**
-* paste **https://github.com/bmarslandcn/game-building-session-tutorials** and click import
+* paste **https://github.com/code-ninjas-home-office/game-building-session-tutorials** and click import
 
 ## Blocks preview
 
