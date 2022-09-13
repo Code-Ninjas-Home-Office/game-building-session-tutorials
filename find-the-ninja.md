@@ -17,7 +17,8 @@
 ## Introduction @showdialog
 
 In this tutorial, you will create a game with 3 kinds of sprites: Ninja, Player, and Enemy. The Ninja sprite will be hidden among many Enemy sprites, and you’ll need to use the Player sprite to find it! Click Ok to get started!
-![Project gif](https://github.com/bmarslandCN/GameBuildingSessions/blob/main/GBS1_resized.gif?raw=true, "Find the Ninja project")
+
+![Project gif](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/find%20the%20ninja.gif?raw=true, "Find the Ninja project")
 
 ![Code Ninjas logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/Code_Ninjas_Color_Horizontal_small.jpg?raw=true, "Code Ninjas logo")
 
@@ -28,9 +29,9 @@ Begin the project by setting a background color on the screen!
 
 - :paint brush: Click the gray bubble in the ``||scene:set background color||`` block to see the different color options appear. Select a color to use as the background.
 
-- :mouse pointer: Click the Game Window tab on the left side of the screen ![Game Window Tab](https://github.com/bmarslandCN/GameBuildingSessions/blob/main/game_icon_small.png?raw=true, "Game Window tab") then click ▶ under the MakeCode game console to see the selected background color appear! 
+- :mouse pointer: Click the Game Window tab on the left side of the screen ![Game Window Tab](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/game_icon_small.png?raw=true, "Game Window tab") then click ▶ under the MakeCode game console to see the selected background color appear! 
 
-- :mouse pointer: Click back to the tutorial ![Tutorial icon](https://github.com/bmarslandCN/GameBuildingSessions/blob/main/tutorial_icon_small.png?raw=true "Tutorial icon") then click Next to go to the next step.
+- :mouse pointer: Click back to the tutorial ![Tutorial icon](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/tutorial_icon_small.png?raw=true "Tutorial icon") then click Next to go to the next step.
 
 ![Code Ninjas logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/Code_Ninjas_Color_Horizontal_small.jpg?raw=true, "Code Ninjas logo")
 
