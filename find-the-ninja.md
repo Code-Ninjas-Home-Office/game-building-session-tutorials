@@ -450,7 +450,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Ninja, function (sprite, otherSp
 ## Step 11
 Code the project to end once the Ninja has been found!
 
-- :repeat: Open ``||loops:Loops||`` and drag ``||loops:pause||`` below the ``||sprites:sprite say||`` block in the ``||sprites:on sprite overlaps sprite||`` container. Change the number in the white bubble to 2000, so that the text can be seen on screen for 2 seconds, before the project ends.
+- :repeat: Open ``||loops:Loops||`` and drag ``||loops:pause||`` below the ``||sprites:set sprite position to||`` block in the ``||sprites:on sprite overlaps sprite||`` container. Change the number in the white bubble to 2000, so that the text can be seen on screen for 2 seconds, before the project ends.
 
 - :circle: Open ``||game:Game||`` and drag ``||game:game over||`` below ``||loops:pause||``. Set the toggle to ``||loops:<WIN>||``, then click **+** to add an effect to the game over screen.
 
