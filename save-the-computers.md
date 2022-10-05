@@ -29,9 +29,9 @@ Begin the project by setting a background color on the screen!
 
 - :paint brush: Click the gray bubble in the ``||scene:set background color||`` block to see the different color options appear. Select a color to use as the background.
 
-- :mouse pointer: Click the Game Window tab on the left side of the screen ![Game Window Tab](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/game_icon_small.png?raw=true, "Game Window tab") then click ▶ under the MakeCode game console to see the selected background color appear! 
+- :mouse pointer: Click the Game Window tab on the right side of the screen then click ▶ to see the selected background color appear! 
 
-- :mouse pointer: Click back to the tutorial ![Tutorial icon](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/tutorial_icon_small.png?raw=true "Tutorial icon") then click Next to go to the next step.
+- :mouse pointer: Click Next to go to the next step.
 
 ![Code Ninjas logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/Code_Ninjas_Color_Horizontal_small.jpg?raw=true, "Code Ninjas logo")
 
