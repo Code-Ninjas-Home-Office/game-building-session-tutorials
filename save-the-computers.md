@@ -29,7 +29,7 @@ Begin the project by setting a background color on the screen!
 
 - :paint brush: Click the gray bubble in the ``||scene:set background color||`` block to see the different color options appear. Select a color to use as the background.
 
-- :mouse pointer: Click the Game Window tab on the right side of the screen then click ▶ to see the selected background color appear! 
+- :mouse pointer: Check the Game Window on the right side of the screen to see the selected background color appear! 
 
 - :mouse pointer: Click Next to go to the next step.
 
