@@ -431,9 +431,7 @@ Your ``||text:Code Sensei||`` will now explain MakeCode Aracde's interface!
 
 - :tree: In the Toolbox, click to open ![Scene](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/Scene.png?raw=true "Click Scene")   
 
-- :tree: Drag the ``||scene:set background color||`` block into  
-
-the ``||loops:on start||`` container in the workspace.  
+- :tree: Drag the ``||scene:set background color||`` block into the ``||loops:on start||`` container in the workspace.  
 
 - :mouse pointer: Click the gray bubble and select a color. 
 
@@ -449,9 +447,7 @@ the ``||loops:on start||`` container in the workspace.
 
  
 
-As you add code to your project, look at the Game Window on the **right** of your screen 
-
-to see it update! 
+As you add code to your project, look at the Game Window on the **right** of your screen to see it update! 
 
  
 
@@ -485,9 +481,7 @@ to see it update!
 
  
 
-- :paper plane: Open ``||sprites:Sprites||`` and drag ``||sprites:set sprite to||``  
-
-into *the end* of the ``||loops:on start||`` container.  
+- :paper plane: Open ``||sprites:Sprites||`` and drag ``||variables:set sprite to||`` into *the end* of the ``||loops:on start||`` container.  
 
 - :mouse pointer: Click the gray box and select the ``||sprites:Gallery||`` tab at the top.  
 
@@ -495,9 +489,7 @@ into *the end* of the ``||loops:on start||`` container.
 
 ![Gallery](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/GalleryTab.png?raw=true "Gallery Tab") 
 
-- :mouse pointer: Choose any image you want and click ``||loops:Done||`` in the bottom right 
-
-when ready! 
+- :mouse pointer: Choose any image you want and click ``||loops:Done||`` in the bottom right when ready! 
 
  
 
@@ -515,11 +507,9 @@ when ready!
 
  
 
-- :paper plane: Open ``||sprites:Sprites||`` and drag ``||sprites:set sprite position||``  
+- :paper plane: Open ``||sprites:Sprites||`` and drag ``||sprites:set sprite position||`` into *the end* of the ``||loops:on start||`` container.  
 
-into *the end* of the ``||loops:on start||`` container.  
-
-- :mouse pointer: Click the white bubbles to change the x and y position. 
+- :mouse pointer: Click the white bubbles to change the **x** and **y** position. 
 
  
 
@@ -545,11 +535,9 @@ into *the end* of the ``||loops:on start||`` container.
 
  
 
-- :paper plane: Open ``||sprites:Sprites||`` and drag ``||sprites:sprite say||``  
+- :paper plane: Open ``||sprites:Sprites||`` and drag ``||sprites:sprite say||`` into *the end* of the ``||loops:on start||`` container.  
 
-into *the end* of the ``||loops:on start||`` container.  
-
-- :mouse pointer: Click the white bubble to type the message you want your sprite to say.   
+- :mouse pointer: Click the white bubble to type the message you want your sprite to say.
 
 🙋 Maybe your sprite will say `"I am a ninja!"` 
 
@@ -575,41 +563,28 @@ into *the end* of the ``||loops:on start||`` container.
 
  
 
-- : : Open ``||music:Music||`` and drag ``||music:play sound until done||`` to *the end* of your code.    
+- :headphones: Open ``||music:Music||`` and drag ``||music:play sound until done||`` to *the end* of your code.    
 
 - :mouse pointer: Click the ``||music:⏷||`` to choose the sound you want to play! 
-
- 
-
- 
 
 - :tree: Open ``||scene:Scene||`` and drag ``||scene:start screen effect||`` to *the end* of your code.   
 
 - :mouse pointer: Click the ``||scene:⏷||`` to choose the effect you want to play! 
-
- 
-
  
 
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
- 
 
 ## Playtest 
 
- 
-
 Check the Game Window to preview your game! 
 
- 
 
 ![Game Window](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/GameWindow.png?raw=true "Game Window") 
 
- 
 
 Make any tweaks to **parameters**! 
 
- 
 
 --- 
 
@@ -617,9 +592,6 @@ Make any tweaks to **parameters**!
 
 *Background color is an example of a parameter!* 
 
- 
-
- 
 
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
@@ -629,45 +601,20 @@ Make any tweaks to **parameters**!
 
 `||arrays:BONUS:||`  *Have extra time to learn more?*  **Change your sprite and background images!** 
 
- 
 
-- :tree: Open ``||scene:Scene||`` and drag ``||scene:set bachground image||``  
+- :tree: Open ``||scene:Scene||`` and drag ``||scene:set bachground image||`` to *the end* of your code. 
 
-to *the end* of your code. 
+- :mouse pointer: Click the white bubble and go to the ``||sprites:Asset||`` tab to select the 🏠**Code Ninjas**🏠 background image.  Click ``||loops: Done||`` when selected. 
 
-- :mouse pointer: Click the white bubble and go to the ``||sprites:Asset||`` tab  
+- :paper plane: Open ``||sprites:Sprites||`` and drag ``||sprites:set sprite image||`` to *the end* of your code.  
 
-to select the 🏠**Code Ninjas**🏠 background image.  Click ``||loops: Done||`` when selected. 
+- :mouse pointer: Click the white bubble and go to the ``||sprites:Asset||`` tab at the top.  Select a 🥷**ninja**🥷 image, and click ``||loops:Done||``. 
 
- 
-
- 
-
- 
-
-- :paper plane: Open ``||sprites:Sprites||`` and drag ``||sprites:set sprite image||``  
-
-to *the end* of your code.  
-
-- :mouse pointer: Click the white bubble and go to the ``||sprites:Asset||`` tab  
-
-at the top.  Select a 🥷**ninja**🥷 image, and click ``||loops:Done||``. 
-
- 
-
-See your sprite and background change images in the **Game Window**! 
-
- 
-
- 
+See your sprite and background change images in the **Game Window**!  
 
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
- 
-
 ##  
-
- 
 
 🎊 **Congratulations!** 🎊 
 
@@ -678,8 +625,6 @@ Thanks for being a ninja with us today!  We hope to see you soon!
 You rocked!! 
 
 --- 
-
- 
 
 ![Yay](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/YayNinja.png?raw=true "You rock!") 
 
