@@ -50,8 +50,6 @@ game.onUpdateInterval(1000, function () {
 
 ``` 
 
- 
-
 ```assetjson 
 
 { 
@@ -78,11 +76,7 @@ game.onUpdateInterval(1000, function () {
 
 ``` 
 
- 
-
 ## Code Ninjas Game Building Session @showdialog 
-
- 
 
 **Catch the Ninja Stars!** 
 
@@ -90,11 +84,7 @@ game.onUpdateInterval(1000, function () {
 
 Welcome to Code Ninjas!  Follow along with a Code Sensei to code a project! 
 
- 
-
 ![Example](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/Catch-ninja-stars-ExProj.gif?raw=true "Project Example") 
-
- 
 
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
@@ -275,8 +265,6 @@ As you add code to your project, look at the Game Window on the **right** of you
 
 - :mouse pointer: Set it to pick from `0` to `160`! 
 
- 
-
 - :calculator: Open ``||math:Math||`` and drag ``||math:pick random||`` into the **y** bubble. 
 
 - :mouse pointer: Set it to pick from `0` to `120`! 
@@ -305,7 +293,6 @@ As you add code to your project, look at the Game Window on the **right** of you
 
 🙋 **Collectibles** are objects to pick up. *The ninja stars are collectibles!* 
 
- 
 
 --- 
 
@@ -317,7 +304,6 @@ As you add code to your project, look at the Game Window on the **right** of you
 
 - :mouse pointer: Drag the two ``||variables:mySprite2||`` codeblocks from ``||loops:on start||`` into the ``||game:game update||`` container: 
 
- 
 
 ![Example](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/mySprite2-onUpdate.gif?raw=true "Drag into game update container.") 
 
@@ -344,8 +330,6 @@ As you add code to your project, look at the Game Window on the **right** of you
 - :paper plane: Open ``||sprites:Sprites||`` and drag ``||sprites:on sprite of kind overlaps||`` onto an empty spot on the coding workspace. 
 
 - :mouse pointer: Click the second dropdown ``||sprites:⏷||`` and set it to **Food**.   
-
- 
 
 - :paper plane: Open ``||sprites:Sprites||`` and drag ``||sprites:destroy sprite||`` into the ``||sprites:on overlap||`` container. 
 
