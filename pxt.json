@@ -11,7 +11,8 @@
         "assets.json",
         "find-the-ninja.md",
         "save-the-computers.md",
-        "become-a-ninja.md"
+        "become-a-ninja.md",
+        "catch-ninja-stars.md"
     ],
     "testFiles": [
         "test.ts"
