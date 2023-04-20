@@ -13,7 +13,8 @@
         "save-the-computers.md",
         "bug-collector.md",
         "become-a-ninja.md",
-        "catch-ninja-stars.md"
+        "catch-ninja-stars.md",
+        "catch-stars.md"
     ],
     "testFiles": [
         "test.ts"
