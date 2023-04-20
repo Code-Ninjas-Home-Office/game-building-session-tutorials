@@ -395,8 +395,7 @@ Welcome to Code Ninjas!  Follow along with a Code Sensei to code a project!
 
  
 
-❓ *Have you ever coded before?*   
-
+❓ *Have you ever coded before?*
 ❓ *Have you ever used MakeCode Aracde?* 
 
  
@@ -537,8 +536,7 @@ As you add code to your project, look at the Game Window on the **right** of you
 
 - :paper plane: Open ``||sprites:Sprites||`` and drag ``||sprites:sprite say||`` into *the end* of the ``||loops:on start||`` container.  
 
-- :mouse pointer: Click the white bubble to type the message you want your sprite to say.
-
+- :mouse pointer: Click the white bubble to type the message you want your sprite to say. 
 🙋 Maybe your sprite will say `"I am a ninja!"` 
 
  
@@ -588,9 +586,7 @@ Make any tweaks to **parameters**!
 
 --- 
 
-🙋 **Parameters** are information you can change to set how a program runs.  
-
-*Background color is an example of a parameter!* 
+🙋 **Parameters** are information you can change to set how a program runs. *Background color is an example of a parameter!* 
 
 
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
