@@ -1,3 +1,5 @@
+# Catch Ninja Stars
+
 ```blocks 
 
 namespace SpriteKind { 
@@ -419,10 +421,7 @@ You rocked!!
 
 --- 
 
- 
-
 ![Yay](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/YayNinja.png?raw=true "You rock!") 
 
- 
 
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
