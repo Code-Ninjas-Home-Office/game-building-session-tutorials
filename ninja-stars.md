@@ -1,12 +1,6 @@
 # Catch the Ninja Stars
 ```blocks 
 
-namespace SpriteKind { 
-
-    export const Object = SpriteKind.create() 
-
-} 
-
 info.onCountdownEnd(function () { 
 
     game.gameOver(true) 
