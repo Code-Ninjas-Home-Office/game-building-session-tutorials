@@ -304,7 +304,7 @@ As you add code to your project, look at the Game Window on the **right** of you
 
 - :circle: Open ``||game:Game||`` and drag ``||game:on game update every||`` onto an empty spot in the coding workspace. 
 
-- :mouse pointer: Drag the two ``||variables:mySprite2||`` codeblocks from ``||loops:on start||`` into the ``||game:game update||`` container: 
+- :mouse pointer: Drag the two ``||variables:mySprite2||`` code blocks from ``||loops:on start||`` into the ``||game:game update||`` container: 
 
 
 ![Example](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/mySprite2-onUpdate.gif?raw=true "Drag into game update container.") 
@@ -315,7 +315,7 @@ As you add code to your project, look at the Game Window on the **right** of you
 
  
 
-``||text: Code Sensei:||`` *Change the number* ``||game:in on game update every||`` * to see what happens.* 
+``||text: Code Sensei:||`` *Change the number in* ``||game:on game update every||`` * to see what happens.* 
 
  
 
@@ -325,7 +325,7 @@ As you add code to your project, look at the Game Window on the **right** of you
 
 ## Pickup Collectibles 
 
-*Make the ninja start disappear when the ninja touches it.* 
+*Make the ninja star disappear when the ninja touches it.* 
 
  
 
