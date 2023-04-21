@@ -1,5 +1,6 @@
 # Catch the Ninja Stars
 
+```blocks 
 info.onCountdownEnd(function () { 
 
     game.gameOver(true) 
