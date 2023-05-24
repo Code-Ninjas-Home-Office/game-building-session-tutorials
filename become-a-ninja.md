@@ -408,7 +408,7 @@ Welcome to Code Ninjas!  Follow along with a Code Sensei to code a project!
 
  
 
-Your ``||text:Code Sensei||`` will now explain MakeCode Aracde's interface! 
+Your ``||text:Code Sensei||`` will now explain MakeCode Arcade's interface! 
 
  
 
@@ -598,7 +598,7 @@ Make any tweaks to **parameters**!
 `||arrays:BONUS:||`  *Have extra time to learn more?*  **Change your sprite and background images!** 
 
 
-- :tree: Open ``||scene:Scene||`` and drag ``||scene:set bachground image||`` to *the end* of your code. 
+- :tree: Open ``||scene:Scene||`` and drag ``||scene:set background image||`` to *the end* of your code. 
 
 - :mouse pointer: Click the white bubble and go to the ``||sprites:Asset||`` tab to select the 🏠**Code Ninjas**🏠 background image.  Click ``||loops: Done||`` when selected. 
 
