@@ -60,7 +60,7 @@ Welcome to Code Ninjas!  Follow along with a Code Sensei to code a project!
 
 **MakeCode Overview:** 
 
-Your ``||text:Code Sensei||`` will now explain MakeCode Aracde's interface! 
+Your ``||text:Code Sensei||`` will now explain MakeCode Arcade's interface! 
 
 ![Ninja](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/NinjaDisplaying.png?raw=true "Explain Interface") 
 
