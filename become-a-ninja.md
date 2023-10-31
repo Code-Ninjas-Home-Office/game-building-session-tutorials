@@ -396,7 +396,7 @@ Welcome to Code Ninjas!  Follow along with a Code Sensei to code a project!
  
 
 ❓ *Have you ever coded before?*
-❓ *Have you ever used MakeCode Aracde?* 
+❓ *Have you ever used MakeCode Arcade?* 
 
  
 
