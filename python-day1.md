@@ -1,4 +1,4 @@
-# Code Ninjas Day 1 Python Project
+# Arctic Code Quest: Day 1
 
 ```assetjson
 {
@@ -16,53 +16,28 @@
 ```
 
 ```python
-elf = sprites.create(assets.image("""girlFront"""), SpriteKind.player).set_position(50, 50)
-scene.set_background_image(assets.image("""skyBackground"""))
-controller.move_sprite(elf)
-elf2 = sprites.create(assets.image("""girlFront"""), SpriteKind.player).set_stay_in_screen(True)
-penguin = sprites.create(assets.image("""penguinFront"""), SpriteKind.enemy).follow(elf, randint(0,160))
-def on_overlap(sprite, otherSprite):
-    candyCane.set_position(randint(0,160), randint(0,120))
-    pass
-sprites.on_overlap(SpriteKind.player, SpriteKind.food, on_overlap)
 ```
 
-## Welcome! @showdialog
+## Arctic Code Quest: Python Edition - Day 1! @showdialog
 
-Welcome to Code Ninjas Python Winter camp! I hope you're ready to make some fun games!
+Welcome to your first Python project code along! Today you will be creating a project with a background image, 3 different sprites positioned across the screen, and 2 overlap functions that make something happen when the different sprites collide! Click Ok! to get started!
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
-## Python and Makecode Arcade!
+## Add a Background Image!
 
----
-🤔 **Lets Think:**
-
-❓ *Have you ever used Makecode Arcade?*
-
-❓ *Do you know what Python is?*
+Add a background image for our winter-themed game!
 
 ---
 
-**Quick talk!**
-
-Alright listen up! Your ``||text:Code Sensei||`` will now explain both of these!
-
-![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
-
-## Making a Background!
-
-First lets use a background for our winter game!
-
----
-
-- :tree: To start, we're going to type ``||scene:scene.set_background_image(img(""""""))||``
-- :mouse pointer: Then we need to click on the draw tool. ![Scene](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/DrawTool.png?raw=true "Draw Tool")
-- :mouse pointer: Then go to the My Assets Tab and pick your background! ![Scene](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/MyAssets.png?raw=true "My Assets Tab")
-- :mouse pointer: Make sure you click DONE at the bottom right of the screen!
+- :tree: To start, type ``||scene:scene||`` and a dot operator ``||.||``
+- :tree: Type **set** then select ``||scene:set_background_image||`` from the code completion tool.
+- :mouse pointer: Click on the palette to open the Gallery. ![Scene](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/DrawTool.png?raw=true "Draw Tool")
+- :mouse pointer: Select a background image from the Gallery or My Assets. ![Scene](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/MyAssets.png?raw=true "My Assets Tab")
+- :mouse pointer: Click DONE at the bottom right of the screen!
 
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
-## Making a sprite!
+## Add your first sprite!
 
 Great job Ninjas! Now youve got a fancy background! Now we're going to teach you how you can make a sprite, a sprite is something that you interact with or control some way in the game!
 
