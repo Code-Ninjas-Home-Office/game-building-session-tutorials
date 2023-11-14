@@ -1,5 +1,34 @@
 # Arctic Code Quest: Day 1
 
+```python
+scene.set_background_image(assets.image("""skyBackground"""))
+
+# player sprite
+mySprite = sprites.create(assets.image("""girlFront"""), SpriteKind.player)
+mySprite.set_position(50, 50)
+controller.move_sprite(mySprite)
+mySprite.set_stay_in_screen(True)
+
+# food sprite
+candyCane = sprites.create(assets.image("""candycane"""), SpriteKind.food)
+candyCane.set_position(100, 100)
+
+# enemy sprite
+penguin = sprites.create(assets.image("""penguinFront"""), SpriteKind.enemy)
+penguin.set_position(100, 10)
+penguin.follow(mySprite, 20)
+
+# sprite overlaps
+def on_overlap(sprite, otherSprite):
+    candyCane.set_position(randint(0,160), randint(0,120))
+    pass
+sprites.on_overlap(SpriteKind.player, SpriteKind.food, on_overlap)
+
+def on_overlap2(sprite, otherSprite):
+    game.game_over(False)
+    pass
+sprites.on_overlap(SpriteKind.player, SpriteKind.enemy, on_overlap2)
+```
 ```assetjson
 {
   "README.md": " ",
