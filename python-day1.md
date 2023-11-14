@@ -51,12 +51,112 @@ Alright listen up! Your ``||text:Code Sensei||`` will now explain both of these!
 
 ## Making a Background!
 
-*First lets use a background for our winter game!*
+First lets use a background for our winter game!
 
 ---
 
-- :tree: To start, we're going to type ``||scene.set_background_image(img(""""""))||``
+- :tree: To start, we're going to type ``||scene:scene.set_background_image(img(""""""))||``
 - :mouse pointer: Then we need to click on the draw tool. ![Scene](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/DrawTool.png?raw=true "Draw Tool")
 - :mouse pointer: Then go to the My Assets Tab and pick your background! ![Scene](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/MyAssets.png?raw=true "My Assets Tab")
+- :mouse pointer: Make sure you click DONE at the bottom right of the screen!
+
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
+
+## Making a sprite!
+
+Great job Ninjas! Now youve got a fancy background! Now we're going to teach you how you can make a sprite, a sprite is something that you interact with or control some way in the game!
+
+---
+
+- :paper plane: This time, we're going to type ``||sprites:(Sprite Name) = sprites.create(assets.image(""""""), SpriteKind.player)||``. Make sure to replace (Sprite Name) with the name of your player! The Sprite Kind tells us what our sprite is, in this case, its a player!
+- :mouse pointer: Then we need to click on the draw tool again. ![Scene](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/DrawTool.png?raw=true "Draw Tool")
+- :mouse pointer: Then go to the My Assets Tab and pick your player! ![Scene](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/MyAssets.png?raw=true "My Assets Tab")
+- :mouse pointer: Make sure you click DONE at the bottom right of the screen again!
+
+---
+
+😲 **Knowledge Check!**
+
+❓ *What is a Sprite?*
+
+❓ *How do I make a sprite?*
+
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
+
+## Challenge Time!
+
+Now it's your turn! Using what we just learned from the previous part, its time to make 2 more ``||sprites:Sprites!||``.  One is going to be an Enemy that chases us, and othe other is going to be a Food that we collect! But the twist is, you have to make them on your own this time! Make sure your Enemy Sprite has ``||sprites:SpriteKind.enemy||`` as it's sprite kind, and your Food sprite has ``||sprites:SpriteKind.food||``.
+
+---
+
+**Hints!**
+
+💡 *How did we make our player sprite? What should we click on the change how our new ones look?*
+
+💡 *Where can you find SpriteKind to change it?*
+
+💡 *If your code is looking a little too big, you can always click on the arrow next to the Draw Tool to shorten it!*
+
+---
+
+Great job Ninjas! Now we have 3 sprites in our game! But do you see an issue?
+
+Theyre all on top of each other! So next step, it's time to change their positions!
+
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
+
+## Setting Positions
+
+Remember how we gave all of our sprites names? This is where it comes in handy! Setting the position of a sprite means how far left or right (X) or how far up or down (Y) it is on the screen! All of the Makecode Arcade screens are always 160 Wide, and 120 tall!
+
+---
+
+- :paper plane: So, this is going to change depending on which of your sprites you start with! Start by typing out the name of your sprite, as an example, im going to use my own sprite, Elf! So to change it's position, i'll type ``||sprites:Elf.set_position(50, 100)||`` to put my elf on the 50 for X, and the 100 for Y! Feel free to put yours wherever you want!
+- :paper plane: Now do the same for your other two sprites! Make sure all of them are in different spots and none of them are on top of the other! Make sure too change the name depending on which one you want to move!
+
+---
+
+Now your sprites are put all over the screen! Its time to move your player around with the control buttons!
+
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
+
+## Moving your Player
+
+We have the very basics of a game starting! Now we need to make a player that can move around! And we also need to make sure they cant go outside of the screen! Right now we're going to do both!
+
+---
+
+- :game controller: First, we need to type in ``||controller:controller.move_sprite(Player Sprite Name)||``, with this, we can move our sprite around with the arrow keys and the arrow pad in our game!
+- :paper plane: The problem is, we can go off of the screen! To fix this, we now need to type ``||sprites:(Player Sprite Name).set_stay_in_screen(True)||``. With this code, our player wont be able to leave the screen!
+
+--- 
+
+Great job so far Ninjas! We're almost done with our first python game! Now its time to get our enemy chasing our player!
+
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
+
+## Making our Enemy chase us!
+
+Making our enemy chase is is really easy! And we want to do it so that the game has some difficulty to it! All we need to do is type ``||sprites:(Enemy Sprite Name).follow(Player Sprite Name, 50)||``. Now to better explain this, we are telling our Enemy Sprite, by name, to follow our player sprite, and the 50 is how fast we want it to go! Feel free to change this however you want, but try not to make it too fast or too slow so its not too easy or too hard!
+
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
+
+## Eating our Food!
+
+Time for the final step! We need to make it so when our player runs into the food, the food goes to a random position so we can go collect it again, to do this we're going to be using code called ``||sprites:Overlap||``!
+
+---
+
+- :paper plane: To start, we need to type ``||sprites:def on_overlap(sprite, otherSprite):||``. Def means define, this is like making a bunch of code that we can use anywhere just by typing "on_overlap()"! Sprite will be our first sprite, and otherSprite will be the one that it runs into.
+- :paper plane: On the next line, we need another ``||sprites:(Food Sprite).set_position()||`` but leave the inside of the parenthesis blank, we're going to be putting something else in there this time!
+- :calculator: To make it go to a random position, inside of the ``||sprites:set_position||`` we need to put ``||math:(randint(0,160), randint(0,120))||``. The reason for this is because then the X will be a random number between the lowest number, 0, and the highest, as we said before, 160. And the Y will be between 0, and 120!
+- :mouse pointer: On the next line, make sure to put ``||pass||``. If you dont, the code wont know that we are done ``||defining||`` the code!
+- :paper plane: Last but not least, we need to actually set it to run whenever the player runs into the Food! To do that, we type out ``||sprites:sprites.on_overlap(SpriteKind.player, SpriteKind.food, on_overlap)||``. With this, we now have it set up so when a sprite kind ``||Player||`` runs into a sprite kind of ``||food||``, then it runs the code inside of ``||on_overlap||``.
+
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
+
+## Playing our Game!
+
+Congratulations, Ninjas! You finished the Day 1 project and now have a game where you can collect food and have an enemy chasing you! Feel free to experiment and try adding more to it to prepare for day 2! Good luck and have fun!
 
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
