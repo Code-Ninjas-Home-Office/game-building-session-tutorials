@@ -35,6 +35,10 @@ Add a background image for our winter-themed game!
 - :mouse pointer: Select a background image from the Gallery or My Assets. ![Scene](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/MyAssets.png?raw=true "My Assets Tab")
 - :mouse pointer: Click DONE at the bottom right of the screen!
 
+```python
+scene.set_background_image(assets.image("""skyBackground"""))
+```
+
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
 ## Add your first sprite!
