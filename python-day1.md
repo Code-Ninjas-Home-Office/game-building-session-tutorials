@@ -4,10 +4,10 @@
 scene.set_background_image(assets.image("""skyBackground"""))
 
 # player sprite
-mySprite = sprites.create(assets.image("""girlFront"""), SpriteKind.player)
-mySprite.set_position(50, 50)
-controller.move_sprite(mySprite)
-mySprite.set_stay_in_screen(True)
+my_sprite = sprites.create(assets.image("""girlFront"""), SpriteKind.player)
+my_sprite.set_position(50, 50)
+controller.move_sprite(my_sprite)
+my_sprite.set_stay_in_screen(True)
 
 # food sprite
 candyCane = sprites.create(assets.image("""candycane"""), SpriteKind.food)
@@ -16,7 +16,7 @@ candyCane.set_position(100, 100)
 # enemy sprite
 penguin = sprites.create(assets.image("""penguinFront"""), SpriteKind.enemy)
 penguin.set_position(100, 10)
-penguin.follow(mySprite, 20)
+penguin.follow(my_sprite, 20)
 
 # sprite overlaps
 def on_overlap(sprite, otherSprite):
@@ -61,12 +61,11 @@ Add a background image for our winter-themed game!
 - :mouse pointer: Select a background image from the Gallery or My Assets. ![Scene](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/MyAssets.png?raw=true "My Assets Tab")
 - :mouse pointer: Click DONE at the bottom right of the screen!
 
----
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
+
 ```python
 scene.set_background_image(assets.image("""skyBackground"""))
 ```
-
-![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
 ## Add your first sprite!
 
@@ -74,27 +73,26 @@ Let's add a sprite to that fancy background! A sprite is something that you inte
 
 ---
 
-- :paper plane: To start, type a name to declare your sprite's variable, such as ``||sprites:my_sprite||`` then type an assignment operator ``||=||``.
+- :paper plane: To start, type a variable name such as ``||sprites:my_sprite||`` to declare your sprite. Then type an assignment operator ``||=||``.
 - :paper plane: Start typing the function ``||sprites:sprites.create||`` then select the function name from the code completion tool.
-- :mouse pointer: Click on the palette to open the Gallery ![Scene](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/DrawTool.png?raw=true "Draw Tool")
+- :mouse pointer: Click on the palette to open the Gallery. ![Scene](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/DrawTool.png?raw=true "Draw Tool")
 - :mouse pointer: Select a sprite image from the Gallery or My Assets. ![Scene](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/MyAssets.png?raw=true "My Assets Tab")
 - :mouse pointer: Click DONE at the bottom right of the screen again!
-- :paper plane: Notice the ``||sprites:SpriteKind.player||`` parameter; leave it alone for now. You will change this for other sprites, though!
-
----
-```python
-scene.set_background_image(assets.image("""skyBackground"""))
-# @highlight
-#player sprite
-mySprite = sprites.create(assets.image("""girlFront"""), SpriteKind.player)
-```
+- :paper plane: Notice the ``||sprites:SpriteKind.player||`` parameter; leave it alone for now. You will change this for other sprites in the next step!
 
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
+```python
+scene.set_background_image(assets.image("""skyBackground"""))
+#player sprite
+# @highlight
+my_sprite = sprites.create(assets.image("""girlFront"""), SpriteKind.player)
+```
+
 ## Challenge Time!
 
-Now it's your turn! Using what you just learned, add 2 more ``||sprites:sprites||`` to your project!
----
+Now it's your turn! Using what you just learned, add 2 more sprites to your project!
+
 - :paper plane: One sprite should be a ``||sprites:SpriteKind.enemy||`` that you will program to chase the Player in a later step.
 - :paper plane: The other sprite should be a ``||sprites:SpriteKind.food||`` that the Player will collect.
 
@@ -102,8 +100,9 @@ Now it's your turn! Using what you just learned, add 2 more ``||sprites:sprites|
 
 **Hints!**
 
-💡 *What do you need to create a sprite?*
-💡 *What should you click on the change the sprite's image?*
+💡 *What code do you need to create a sprite?*
+
+💡 *What should you click on to change the sprite's image?*
 
 💡 *Where can you find the SpriteKind to change it?*
 
@@ -111,62 +110,213 @@ Now it's your turn! Using what you just learned, add 2 more ``||sprites:sprites|
 
 ---
 
-Great job Ninjas! Now you have 3 sprites in your game! But do you see an issue? They're all on top of each other! In the next step, you will change their positions!
+Great job: now you have 3 sprites in your game! But do you see an issue? They're all on top of each other! In the next step, you will change their positions!
 
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
-## Setting Positions
+## Set the sprite positions
 
-Remember how we gave all of our sprites names? This is where it comes in handy! Setting the position of a sprite means how far left or right (X) or how far up or down (Y) it is on the screen! All of the Makecode Arcade screens are always 160 Wide, and 120 tall!
+All of your sprites should have their own variable name. This is how you will set their position!
+
+To set a sprite's position in MakeCode, you will use **x-values** between **0-160** to set it's left-right position and **y-values** between **0-120** to set it's up-down position.
 
 ---
 
-- :paper plane: So, this is going to change depending on which of your sprites you start with! Start by typing out the name of your sprite, as an example, im going to use my own sprite, Elf! So to change it's position, i'll type ``||sprites:Elf.set_position(50, 100)||`` to put my elf on the 50 for X, and the 100 for Y! Feel free to put yours wherever you want!
-- :paper plane: Now do the same for your other two sprites! Make sure all of them are in different spots and none of them are on top of the other! Make sure too change the name depending on which one you want to move!
+- :paper plane: Type a sprite's name and a dot operator ``||.||``. Select ``||sprites:set_position||`` from the code completion tool.
+- :keyboard: Use the Tab key to select the x parameter, then type a number 0-160.
+- :keyboard: Press Tab again to select the y parameter, then type a number 0-120.
+- :play: Click the Play button on the emulator to see the sprite's position. Tinker with the x and y values until the sprite is where you want it to be!
+- :paper plane: Now, follow these steps to set the position for the other 2 sprites!
 
 ---
 
-Now your sprites are put all over the screen! Its time to move your player around with the control buttons!
+**Pro-Tip**
 
-![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
+💡 *Organize your code by placing the position code under the sprites.create code for each sprite!*
 
-## Moving your Player
+💡 *Use code comments to specify where the code for each sprite exists in the code editor. Code comments in Python start with a # sign.*
 
-We have the very basics of a game starting! Now we need to make a player that can move around! And we also need to make sure they cant go outside of the screen! Right now we're going to do both!
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo")
+
+```python
+scene.set_background_image(assets.image("""skyBackground"""))
+
+#player sprite
+my_sprite = sprites.create(assets.image("""girlFront"""), SpriteKind.player)
+# @highlight
+my_sprite.set_position(50, 50)
+
+#food sprite
+candyCane = sprites.create(assets.image("""candycane"""), SpriteKind.food)
+# @highlight
+candyCane.set_position(100, 100)
+
+#enemy sprite
+penguin = sprites.create(assets.image("""penguinFront"""), SpriteKind.enemy)
+# @highlight
+penguin.set_position(100, 10)
+```
+
+## Move your Player sprite
+
+You now have the basics of a game in place! Now you need to make your player move around the screen!
 
 ---
 
-- :game controller: First, we need to type in ``||controller:controller.move_sprite(Player Sprite Name)||``, with this, we can move our sprite around with the arrow keys and the arrow pad in our game!
-- :paper plane: The problem is, we can go off of the screen! To fix this, we now need to type ``||sprites:(Player Sprite Name).set_stay_in_screen(True)||``. With this code, our player wont be able to leave the screen!
+- :game controller: To start, type ``||controller:controller||`` and a dot operator ``||.||``, then select ``||controller:move_sprite||``.
+- :game controller: Replace None with the variable name of the Player sprite.
+- :play: Click the Play button to test out the sprite movement with the emulator's keypad or your computer's arrow keys.
 
---- 
-
-Great job so far Ninjas! We're almost done with our first python game! Now its time to get our enemy chasing our player!
-
-![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
-
-## Making our Enemy chase us!
-
-Making our enemy chase is is really easy! And we want to do it so that the game has some difficulty to it! All we need to do is type ``||sprites:(Enemy Sprite Name).follow(Player Sprite Name, 50)||``. Now to better explain this, we are telling our Enemy Sprite, by name, to follow our player sprite, and the 50 is how fast we want it to go! Feel free to change this however you want, but try not to make it too fast or too slow so its not too easy or too hard!
+Oh no! Your sprite can move off the screen! To fix this:
+- :paper plane: Type the name of your sprite, a dot operator ``||.||``, and select ``||sprites:set_stay_in_screen||``. 
+- :paper plane: Leave the parameter set to True so your Player sprite won't be able to leave the screen!
 
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
-## Eating our Food!
+```python
+scene.set_background_image(assets.image("""skyBackground"""))
 
-Time for the final step! We need to make it so when our player runs into the food, the food goes to a random position so we can go collect it again, to do this we're going to be using code called ``||sprites:Overlap||``!
+#player sprite
+my_sprite = sprites.create(assets.image("""girlFront"""), SpriteKind.player)
+my_sprite.set_position(50, 50)
+# @highlight
+controller.move_sprite(my_sprite)
+# @highlight
+my_sprite.set_stay_in_screen(True)
+
+#food sprite
+candyCane = sprites.create(assets.image("""candycane"""), SpriteKind.food)
+candyCane.set_position(100, 100)
+
+#enemy sprite
+penguin = sprites.create(assets.image("""penguinFront"""), SpriteKind.enemy)
+penguin.set_position(100, 10)
+```
+
+## Make your Enemy chase the Player!
+
+Making the Enemy sprite chase the Player sprite is really easy! 
+
+- :paper plane: Type the Enemy sprite's variable name and a dot operator ``||.||``, then select ``||sprites:follow||`` from the code completion tool.
+- :paper plane: Replace None with the Player sprite's variable name.
+- :keyboard: Change the speed the Enemy follows the Player by typing a comma in the parentheses after the Player sprite name, followed by a number.
+- :play: Click the Play button then tinker with the speed parameter to find a number that is just right!
+
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
+
+```python
+scene.set_background_image(assets.image("""skyBackground"""))
+
+#player sprite
+my_sprite = sprites.create(assets.image("""girlFront"""), SpriteKind.player)
+my_sprite.set_position(50, 50)
+controller.move_sprite(my_sprite)
+my_sprite.set_stay_in_screen(True)
+
+#food sprite
+candyCane = sprites.create(assets.image("""candycane"""), SpriteKind.food)
+candyCane.set_position(100, 100)
+
+#enemy sprite
+penguin = sprites.create(assets.image("""penguinFront"""), SpriteKind.enemy)
+penguin.set_position(100, 10)
+# @highlight
+penguin.follow(my_sprite, 40)
+```
+
+## Eat your Food!
+
+Make something happen when the Player sprite runs into the Food sprite using an ``||sprites:on_overlap||`` function!
 
 ---
 
-- :paper plane: To start, we need to type ``||sprites:def on_overlap(sprite, otherSprite):||``. Def means define, this is like making a bunch of code that we can use anywhere just by typing "on_overlap()"! Sprite will be our first sprite, and otherSprite will be the one that it runs into.
-- :paper plane: On the next line, we need another ``||sprites:(Food Sprite).set_position()||`` but leave the inside of the parenthesis blank, we're going to be putting something else in there this time!
-- :calculator: To make it go to a random position, inside of the ``||sprites:set_position||`` we need to put ``||math:(randint(0,160), randint(0,120))||``. The reason for this is because then the X will be a random number between the lowest number, 0, and the highest, as we said before, 160. And the Y will be between 0, and 120!
-- :mouse pointer: On the next line, make sure to put ``||pass||``. If you dont, the code wont know that we are done ``||defining||`` the code!
-- :paper plane: Last but not least, we need to actually set it to run whenever the player runs into the Food! To do that, we type out ``||sprites:sprites.on_overlap(SpriteKind.player, SpriteKind.food, on_overlap)||``. With this, we now have it set up so when a sprite kind ``||Player||`` runs into a sprite kind of ``||food||``, then it runs the code inside of ``||on_overlap||``.
+- :paper plane: To make it easier to use the ``||sprites:on_overlap||`` function, click on ``||sprites:Sprites||`` in the code menu, then select this block and drag it into the coding canvas beneath the exisiting code:
+![code](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/overlap%20code%20python.png?raw=true "overlap code image")
+- :mouse pointer: def means define, and defines the overlap function with 2 parameters: sprite and otherSprite. The code after the colon will run whenever the function is called, which happens on the line below the word "pass".
+- :paper plane: On the line where the ``||sprites:on_overlap||`` function is called (*not where it is defined!*) replace the second ``||sprites:SpriteKind.player||`` with ``||sprites:SpriteKind.food||`` to make something happen when those 2 sprite kinds overlap. 
+- :paper plane: Inside the function definition, type ``||sprites:otherSprite||`` to reference the Food sprite, followed by a dot operator ``||.||`` and the ``||sprites:set_position||`` function.
+- :calculator: To set the Food sprite to a random position after each overlap, use ``||math: randint||`` for both the x and y parameters, setting the low and high range as 0 and 160 for x and 0 and 120 for y.
 
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
-## Playing our Game!
+```python
+scene.set_background_image(assets.image("""skyBackground"""))
 
-Congratulations, Ninjas! You finished the Day 1 project and now have a game where you can collect food and have an enemy chasing you! Feel free to experiment and try adding more to it to prepare for day 2! Good luck and have fun!
+#player sprite
+my_sprite = sprites.create(assets.image("""girlFront"""), SpriteKind.player)
+my_sprite.set_position(50, 50)
+controller.move_sprite(my_sprite)
+my_sprite.set_stay_in_screen(True)
+
+#food sprite
+candyCane = sprites.create(assets.image("""candycane"""), SpriteKind.food)
+candyCane.set_position(100, 100)
+
+#enemy sprite
+penguin = sprites.create(assets.image("""penguinFront"""), SpriteKind.enemy)
+penguin.set_position(100, 10)
+penguin.follow(my_sprite, 40)
+
+#sprite overlaps
+# @highlight
+def on_overlap(sprite, otherSprite):
+    # @highlight
+    candyCane.set_position(randint(0,160), randint(0,120))
+    # @highlight
+    pass
+# @highlight
+sprites.on_overlap(SpriteKind.player, SpriteKind.food, on_overlap)
+```
+
+## End the Game!
+
+Use another ``||sprites:on_overlap||`` function to end the game when the Enemy sprite collides with the Player!
+
+---
+- :paper plane: Drag another ``||sprites:on_overlap||`` function from the ``||sprites:Sprites||`` code menu. Update the Sprite Kinds to ``||sprites:Player||`` and ``||sprites:Enemy||``.
+- :circle: Inside, type ``||game:game||`` and a dot operator ``||.||`` then select ``||game:game_over||`` from the code completion tool.
+- :play: Click the Play button to see what happens when True is used in the ``||game:game_over||`` function. Then, see what happens when False is used.
+
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
+
+```python
+scene.set_background_image(assets.image("""skyBackground"""))
+
+#player sprite
+my_sprite = sprites.create(assets.image("""girlFront"""), SpriteKind.player)
+my_sprite.set_position(50, 50)
+controller.move_sprite(my_sprite)
+my_sprite.set_stay_in_screen(True)
+
+#food sprite
+candyCane = sprites.create(assets.image("""candycane"""), SpriteKind.food)
+candyCane.set_position(100, 100)
+
+#enemy sprite
+penguin = sprites.create(assets.image("""penguinFront"""), SpriteKind.enemy)
+penguin.set_position(100, 10)
+penguin.follow(my_sprite, 40)
+
+#sprite overlaps
+def on_overlap(sprite, otherSprite):
+    candyCane.set_position(randint(0,160), randint(0,120))
+    pass
+sprites.on_overlap(SpriteKind.player, SpriteKind.food, on_overlap)
+
+# @highlight
+def on_overlap2(sprite, otherSprite):
+    # @highlight
+    game.game_over(False)
+    # @highlight
+    pass
+# @highlight
+sprites.on_overlap(SpriteKind.player, SpriteKind.enemy, on_overlap2)
+```
+
+## Finishing your game!
+
+Congratulations! You just finished the Day 1 code along! 
+
+Get ready because you are now going to use everything you just learned to create your own original project using Python!
 
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
