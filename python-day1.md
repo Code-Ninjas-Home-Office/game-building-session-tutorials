@@ -61,6 +61,7 @@ Add a background image for our winter-themed game!
 - :mouse pointer: Select a background image from the Gallery or My Assets. ![Scene](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/MyAssets.png?raw=true "My Assets Tab")
 - :mouse pointer: Click DONE at the bottom right of the screen!
 
+---
 ```python
 scene.set_background_image(assets.image("""skyBackground"""))
 ```
@@ -69,22 +70,24 @@ scene.set_background_image(assets.image("""skyBackground"""))
 
 ## Add your first sprite!
 
-Great job Ninjas! Now youve got a fancy background! Now we're going to teach you how you can make a sprite, a sprite is something that you interact with or control some way in the game!
+Let's add a sprite to that fancy background! A sprite is something that you interact with or control some way in the game!
 
 ---
 
-- :paper plane: This time, we're going to type ``||sprites:(Sprite Name) = sprites.create(assets.image(""""""), SpriteKind.player)||``. Make sure to replace (Sprite Name) with the name of your player! The Sprite Kind tells us what our sprite is, in this case, its a player!
-- :mouse pointer: Then we need to click on the draw tool again. ![Scene](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/DrawTool.png?raw=true "Draw Tool")
-- :mouse pointer: Then go to the My Assets Tab and pick your player! ![Scene](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/MyAssets.png?raw=true "My Assets Tab")
-- :mouse pointer: Make sure you click DONE at the bottom right of the screen again!
+- :paper plane: To start, type a name to declare your sprite's variable, such as ``||sprites:my_sprite||`` then type an assignment operator ``||=||``.
+- :paper plane: Start typing the function ``||sprites:sprites.create||`` then select the function name from the code completion tool.
+- :mouse pointer: Click on the palette to open the Gallery ![Scene](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/DrawTool.png?raw=true "Draw Tool")
+- :mouse pointer: Select a sprite image from the Gallery or My Assets. ![Scene](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/MyAssets.png?raw=true "My Assets Tab")
+- :mouse pointer: Click DONE at the bottom right of the screen again!
+- :paper plane: Notice the ``||sprites:SpriteKind.player||`` parameter; leave it alone for now. You will change this for other sprites, though!
 
 ---
-
-😲 **Knowledge Check!**
-
-❓ *What is a Sprite?*
-
-❓ *How do I make a sprite?*
+```python
+scene.set_background_image(assets.image("""skyBackground"""))
+# @highlight
+#player sprite
+mySprite = sprites.create(assets.image("""girlFront"""), SpriteKind.player)
+```
 
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
