@@ -93,23 +93,25 @@ mySprite = sprites.create(assets.image("""girlFront"""), SpriteKind.player)
 
 ## Challenge Time!
 
-Now it's your turn! Using what we just learned from the previous part, its time to make 2 more ``||sprites:Sprites!||``.  One is going to be an Enemy that chases us, and othe other is going to be a Food that we collect! But the twist is, you have to make them on your own this time! Make sure your Enemy Sprite has ``||sprites:SpriteKind.enemy||`` as it's sprite kind, and your Food sprite has ``||sprites:SpriteKind.food||``.
+Now it's your turn! Using what you just learned, add 2 more ``||sprites:sprites||`` to your project!
+---
+- :paper plane: One sprite should be a ``||sprites:SpriteKind.enemy||`` that you will program to chase the Player in a later step.
+- :paper plane: The other sprite should be a ``||sprites:SpriteKind.food||`` that the Player will collect.
 
 ---
 
 **Hints!**
 
-💡 *How did we make our player sprite? What should we click on the change how our new ones look?*
+💡 *What do you need to create a sprite?*
+💡 *What should you click on the change the sprite's image?*
 
-💡 *Where can you find SpriteKind to change it?*
+💡 *Where can you find the SpriteKind to change it?*
 
-💡 *If your code is looking a little too big, you can always click on the arrow next to the Draw Tool to shorten it!*
+💡 *If your code is looking a little too long, click on the arrow next to the palette to shorten it!*
 
 ---
 
-Great job Ninjas! Now we have 3 sprites in our game! But do you see an issue?
-
-Theyre all on top of each other! So next step, it's time to change their positions!
+Great job Ninjas! Now you have 3 sprites in your game! But do you see an issue? They're all on top of each other! In the next step, you will change their positions!
 
 ![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
