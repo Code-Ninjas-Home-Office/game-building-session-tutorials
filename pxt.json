@@ -7,8 +7,13 @@
     "files": [
         "main.blocks",
         "main.ts",
+        "main.py",
         "README.md",
         "assets.json",
+        "images.g.jres",
+        "images.g.ts",
+        "tilemap.g.jres",
+        "tilemap.g.ts",
         "find-the-ninja.md",
         "save-the-computers.md",
         "become-a-ninja.md",
