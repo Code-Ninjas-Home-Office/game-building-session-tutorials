@@ -12,7 +12,7 @@
         "find-the-ninja.md",
         "save-the-computers.md",
         "become-a-ninja.md",
-        "ninja-stars.md",
+        "ninja-stars.md"
     ],
     "testFiles": [
         "test.ts"
