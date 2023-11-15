@@ -44,9 +44,6 @@ sprites.on_overlap(SpriteKind.player, SpriteKind.enemy, on_overlap2)
 }
 ```
 
-```python
-```
-
 ## Arctic Code Quest: Python Edition - Day 1! @showdialog
 
 Welcome to your first Python project code along! Today you will be creating a project with a background image, 3 different sprites positioned across the screen, and 2 overlap functions that make something happen when the different sprites collide! Click Ok! to get started!
