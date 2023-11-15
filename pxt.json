@@ -7,21 +7,12 @@
     "files": [
         "main.blocks",
         "main.ts",
-        "main.py",
         "README.md",
         "assets.json",
-        "images.g.jres",
-        "images.g.ts",
-        "tilemap.g.jres",
-        "tilemap.g.ts",
         "find-the-ninja.md",
         "save-the-computers.md",
         "become-a-ninja.md",
         "ninja-stars.md",
-        "python-day1.md",
-        "python-day2.md",
-        "python-day3.md",
-        "python-day4.md"
     ],
     "testFiles": [
         "test.ts"
