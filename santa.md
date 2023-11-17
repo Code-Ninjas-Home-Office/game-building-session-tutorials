@@ -134,7 +134,7 @@ Santa is currently stuck in the middle of our screen! Let's add code to position
 
 ---
 
-- :tree: Open the ``||scene:Scene||`` code block menu, and drag out a ``||scene:place mySprite on top of  (tilmap)||`` block. 
+- :tree: Open the ``||scene:Scene||`` code block menu, and drag out a ``||scene:place mySprite on top of  (tilemap)||`` block. 
 - :tree: Place the block under the ``||variables:set playerSprite to||`` block, then change ``||variables:mySprite||`` to ``||variables:playerSprite||``.
 - :tree: Leave the **col** value set to 0, but change the **row** to **6** so Santa is standing on top of the tilemap ground.
 - :play: Click the Play button to see Santa's position change on the MakeCode Arcade emulator screen!
@@ -153,7 +153,7 @@ Add code to let Santa move left and right to explore the **tilemap**!
 ---
 
 - :game controller: Open the ``||controller:Controller||`` code block menu, and drag out a ``||controller:move mySprite with buttons||`` block.
-- :game controller: Place the block underneath the previous block, then change ``||variables:mySprite||`` to ``||variables:playerSprite||``.
+- :game controller: Place the block underneath the ``||scene:place mySprite on top of  (tilemap)||`` block then change ``||variables:mySprite||`` to ``||variables:playerSprite||``.
 - :game controller: Click ``||controller:+||`` to open the **vx** and **vy** parameters, which control how fast and in which direction the sprite can move.
 - :game controller: Leave **vx** set to 100, but change **vy** to **0** so Santa can only move left and right on this 2D platformer tilemap.
 - :tree: Open ``||scene:Scene||`` and drag a ``||scene:camera follow sprite||`` block underneath the previous block, then update the sprite name in the red bubble.
@@ -174,35 +174,12 @@ Santa needs to be able to jump up onto the platforms and over the ice! Let's fix
 
 ---
 
-- :game controller: Find the ``||controller:on A button pressed||`` container already in the code. Notice the ``||logic:if||`` **conditional** statement inside. We are going to drag a block inside this **conditional** that will allow our sprite to jump up when the A button is pressed and the bottom of our sprite is touching a tilemap wall (the ground).
-- :paper plane: Open the ``||sprites:Sprites||`` code block menu, and drag a ``||sprites:set mySprite x||`` block inside the **conditional**. 
-- :paper plane: Click on ``||sprites:x||`` to open the dropdown menu. Select ``||sprites:vy (velocity y)||`` then update the sprite name and type **-200** in the white bubble.
-- :play: Click the Play button, then test out the jump with the A button.
-
-![Logo](https://github.com/Code-Ninjas-Home-Office/arctic-code-quest/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
-
-```blocks
-let playerSprite = sprites.create(assets.image`santaRight`, SpriteKind.Player)
-tiles.placeOnTile(playerSprite, tiles.getTileLocation(0, 6))
-controller.moveSprite(playerSprite, 100, 0)
-scene.cameraFollowSprite(playerSprite)
-
-controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    if (playerSprite.isHittingTile(CollisionDirection.Bottom)) {
-        playerSprite.vy = -200
-    }
-})
-```
-
-## Bring Santa back down to the ground!
-
-Oh no! Santa got stuck up in the sky! Let's add code to pull Santa back down to the ground.
-
----
-
-- :paper plane: Open ``||sprites:Sprites||`` again and drag another ``||sprites:set mySprite x||`` block out. Place this block underneath the other ``||variables:playerSprite||`` code. 
+- :paper plane: Open ``||sprites:Sprites||`` and drag a ``||sprites:set mySprite x||`` block underneath the other ``||variables:playerSprite||`` code. 
 - :paper plane: Click on ``||sprites:x||`` to open the dropdown menu. Select ``||sprites:ay (acceleration y)||`` then update the sprite name and type **500** in the white bubble.
-- :play: Click the Play button, then test out the jump again with the A button.
+- :game controller: Find the ``||controller:on A button pressed||`` container already in the code, and notice the ``||logic:if||`` **conditional** statement inside.
+- :paper plane: Open the ``||sprites:Sprites||`` code block menu and drag a ``||sprites:set mySprite x||`` block inside the ``||logic:if||`` **conditional**. 
+- :paper plane: Click on ``||sprites:x||`` to open the dropdown menu. Select ``||sprites:vy (velocity y)||`` then update the sprite name and type **-200** in the white bubble.
+- :play: Click the Play button, then test out the jump with the A button. The **conditional** will only allow your sprite to jump up if the bottom of your sprite is touching a tilemap wall (the ground).
 
 ![Logo](https://github.com/Code-Ninjas-Home-Office/arctic-code-quest/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
@@ -212,6 +189,12 @@ tiles.placeOnTile(playerSprite, tiles.getTileLocation(0, 6))
 controller.moveSprite(playerSprite, 100, 0)
 scene.cameraFollowSprite(playerSprite)
 playerSprite.ay = 500
+
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (playerSprite.isHittingTile(CollisionDirection.Bottom)) {
+        playerSprite.vy = -200
+    }
+})
 ```
 
 ## Finish the tilemap design!
