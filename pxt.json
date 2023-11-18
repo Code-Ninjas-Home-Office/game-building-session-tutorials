@@ -13,7 +13,8 @@
         "save-the-computers.md",
         "become-a-ninja.md",
         "ninja-stars.md",
-        "santa.md"
+        "santa.md",
+        "nye.md"
     ],
     "testFiles": [
         "test.ts"
