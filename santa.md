@@ -126,7 +126,7 @@ Oh no! Santa slipped on the ice and lost all of his presents! Code this game to 
 
 Click ``||loops:Ok||`` to get started!
 
-![Logo](https://github.com/Code-Ninjas-Home-Office/arctic-code-quest/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
 ## Position Santa on the tilemap!
 
@@ -139,7 +139,7 @@ Santa is currently stuck in the middle of our screen! Let's add code to position
 - :tree: Leave the **col** value set to 0, but change the **row** to **6** so Santa is standing on top of the tilemap ground.
 - :play: Click the Play button to see Santa's position change on the MakeCode Arcade emulator screen!
 
-![Logo](https://github.com/Code-Ninjas-Home-Office/arctic-code-quest/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
 ```blocks
 let playerSprite = sprites.create(assets.image`santaRight`, SpriteKind.Player)
@@ -159,7 +159,7 @@ Add code to let Santa move left and right to explore the **tilemap**!
 - :tree: Open ``||scene:Scene||`` and drag a ``||scene:camera follow sprite||`` block underneath the previous block, then update the sprite name in the red bubble.
 - :play: Click the Play button to test that Santa moves correctly, and the camera follows him as he moves around the tilemap!
 
-![Logo](https://github.com/Code-Ninjas-Home-Office/arctic-code-quest/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
 ```blocks
 let playerSprite = sprites.create(assets.image`santaRight`, SpriteKind.Player)
@@ -181,7 +181,7 @@ Santa needs to be able to jump up onto the platforms and over the ice! Let's fix
 - :paper plane: Click on ``||sprites:x||`` to open the dropdown menu. Select ``||sprites:vy (velocity y)||`` then update the sprite name and type **-200** in the white bubble.
 - :play: Click the Play button, then test out the jump with the A button. The **conditional** will only allow your sprite to jump up if the bottom of your sprite is touching a tilemap wall (the ground).
 
-![Logo](https://github.com/Code-Ninjas-Home-Office/arctic-code-quest/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
 ```blocks
 let playerSprite = sprites.create(assets.image`santaRight`, SpriteKind.Player)
@@ -208,7 +208,7 @@ After exploring the tilemap, did you notice it is unfinished? Let's fix that!
 - :map: Turn all of these ground and platform tiles into **walls** by clicking on the **Draw Walls** button and using the Paint Tool to paint over all of the tiles that Santa will need to walk on.
 - :map: Click ``||loops:Done||`` then click the Play button to explore your finished tilemap!
 
-![Logo](https://github.com/Code-Ninjas-Home-Office/arctic-code-quest/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
 ## Add the presents for Santa to collect!
 
@@ -221,7 +221,7 @@ Where are all the presents?? Add the lost presents to the tilemap for Santa to c
 - :map: Click ``||loops:Done||`` then click the Play button to find the present sprites on the tilemap! You'll notice the green **spawn** tiles are gone; the code in the function replaces the tile with a blank tile after placing a sprite on it.
 
 
-![Logo](https://github.com/Code-Ninjas-Home-Office/arctic-code-quest/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
 
 ## Add the obstacles for Santa to avoid!
@@ -234,7 +234,7 @@ Santa loves some milk and cookies, but they distract him from finding the lost p
 - :map: Open the tilemap editor again. Find the yellow **spawn** tile under **My Tiles** then place 6-8 on the tilemap in a location where Santa can reach them. 
 - :map: Click ``||loops:Done||`` then click the Play button to find the milk and cookies sprites on the tilemap! You'll notice the yellow **spawn** tiles are gone; the code in the function replaces the tile with a blank tile after placing a sprite on it.
 
-![Logo](https://github.com/Code-Ninjas-Home-Office/arctic-code-quest/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
 ## Add a countdown timer!
 
@@ -248,7 +248,7 @@ Add a countdown timer to make the game more challenging! Reduce the time when Sa
 - :id card: Fill in the white bubble with the number of seconds to reduce the time by, such as **-5**.
 - :play: Click the Play button to test the timer code, ensuring the countdown timer is reduced when Santa overlaps a milk and cookies sprite.
 
-![Logo](https://github.com/Code-Ninjas-Home-Office/arctic-code-quest/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
 ```blocks
 let playerSprite = sprites.create(assets.image`santaRight`, SpriteKind.Player)
@@ -273,7 +273,7 @@ Adding sounds and customizing the Game Over screen will make your game even more
 - :headphones: Open the ``||music:Music||`` code block menu and drag out ``||music:play sound until done||`` blocks into the 2 sprite ``||sprites:overlap||`` and 1 tile ``||scene:overlap||`` containers. 
 - :circle: Open the ``||game:Game||`` code block menu and drag out any of the blocks that will customize the Game Over screen into the ``||logic:if||`` statement inside the ``||sprites:on sprite of kind (Player) overlaps otherSprite of kind (Food)||`` container. Be sure to place these blocks above the ``||game:game over||`` block.
 
-![Logo](https://github.com/Code-Ninjas-Home-Office/arctic-code-quest/blob/master/images/CN-Logo.png?raw=true "CN Logo")
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
 ```blocks
 scene.onOverlapTile(SpriteKind.Player, assets.tile`snowPath13`, function (sprite, location) {
@@ -305,7 +305,7 @@ Before you complete your game, add a splash message with game instructions at th
 - :circle: Type a short message in the white bubble to be displayed on screen. Press ``||game:+||`` to add a second line to the message.
 - :play: Click the Play button to see your splash messages appear on screen, then edit the messages, adding more ``||game:splash||`` blocks as needed to make the entire message fit.
 
-![Logo](https://github.com/Code-Ninjas-Home-Office/arctic-code-quest/blob/master/images/CN-Logo.png?raw=true "CN Logo")
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
 
 ```blocks
 scene.setBackgroundImage(assets.image`winterBackground`)
@@ -323,4 +323,4 @@ Click Done to open your game in MakeCode Arcade, where you can add to your code 
 
 Happy coding!
 
-![Logo](https://github.com/Code-Ninjas-Home-Office/arctic-code-quest/blob/master/images/CN-Logo.png?raw=true "CN Logo")
+![Logo](https://github.com/Code-Ninjas-Home-Office/game-building-session-tutorials/blob/master/images/CN-Logo.png?raw=true "CN Logo") 
