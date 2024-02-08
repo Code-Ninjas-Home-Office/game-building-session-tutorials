@@ -202,7 +202,7 @@ We now use the term **debugging** to mean fixing problems in code.
 
 ---
 
-*Click the ``||scene.Next||`` button to get started.*
+*Click the ``||Next||`` button to get started.*
 
 
 ![Code Ninjas](https://github.com/sbannonCN/bug-collector/blob/master/CN%20logo-.jpg?raw=true "Code Ninjas")
@@ -220,7 +220,7 @@ Click the **Game Window** tab above.
 
 ---
 
-Use this tab whenever you need to click ``||scene.▶||`` to preview the project!
+Use this tab whenever you need to click ``||▶||`` to preview the project!
 
 
 ![Code Ninjas](https://github.com/sbannonCN/bug-collector/blob/master/CN%20logo-.jpg?raw=true "Code Ninjas")
@@ -378,16 +378,16 @@ Click on the **Game Window** to see these blocks in action on the game screen!
 
 ---
 
-- :game controller: Open **Controller** and drag ``||controller.move (mySprite)||`` 
-into *the end* of the ``||loops.on start||`` container. 
+- :game controller: Open **Controller** and drag ``||controller:move (mySprite)||`` 
+into *the end* of the ``||loops:on start||`` container. 
 
 
-- :paper plane: Open **Sprites** and drag ``||sprites.set (mySprite) stay in screen||`` 
-into *the end* of ``||loops.on start||``.
+- :paper plane: Open **Sprites** and drag ``||sprites:set (mySprite) stay in screen||`` 
+into *the end* of ``||loops:on start||``.
 
 ---
 
-*Click ``||scene.▶||`` and use the directional buttons to move Grace Hopper.*
+*Click ``||▶||`` and use the directional buttons to move Grace Hopper.*
 
 
 ![Code Ninjas](https://github.com/sbannonCN/bug-collector/blob/master/CN%20logo-.jpg?raw=true "Code Ninjas")
@@ -547,12 +547,12 @@ mySprite.setStayInScreen(true)
 
 ---
 
-- :circle: Open **Game** and drag ``||game.on game update every||`` 
+- :circle: Open **Game** and drag ``||game:on game update every||`` 
 onto an empty spot in the editor.
 
 
-- :paper plane: Open **Sprites** and drag ``||variables.set [projectile] to||`` 
-into ``||game.on game update every||``.
+- :paper plane: Open **Sprites** and drag ``||variables:set [projectile] to||`` 
+into ``||game:on game update every||``.
 
 ---
 
@@ -734,15 +734,15 @@ game.onUpdateInterval(500, function () {
 
 ---
 
-- :mouse pointer: In the editor, click on ``||variables.[projectile]||`` and select 
-``||variables.Rename Variable...||``.  Type **moth** and click ``||loops.Ok||``.
+- :mouse pointer: In the editor, click on ``||variables:[projectile]||`` and select 
+``||variables:Rename Variable...||``.  Type **moth** and click ``||loops.Ok||``.
 
-- :mouse pointer: Click the **grey oval** and go to the ``||sprites.My Assets||`` tab at the top. 
-Select the **moth** and click ``||loops.Done||``.
+- :mouse pointer: Click the **grey oval** and go to the ``||sprites:My Assets||`` tab at the top. 
+Select the **moth** and click ``||loops:Done||``.
 
 ---
 
-*Click ``||scene.▶||`` to see a moth move across the screen every 500 ms.*
+*Click ``||▶||`` to see a moth move across the screen every 500 ms.*
 
 
 ![Code Ninjas](https://github.com/sbannonCN/bug-collector/blob/master/CN%20logo-.jpg?raw=true "Code Ninjas")
@@ -919,14 +919,14 @@ game.onUpdateInterval(500, function () {
 
 ---
 
-- :calculator: Open **Math** and drag ``||math.pick random||`` 
-into both the ``||sprites.vx||`` **and** ``||sprites.vy||`` bubbles. 
+- :calculator: Open **Math** and drag ``||math:pick random||`` 
+into both the ``||sprites:vx||`` **and** ``||sprites:vy||`` bubbles. 
 
 - :mouse pointer: Set both to pick random from **-50** to **50**. 
 
 ---
 
-*Click ``||scene.▶||`` to see moths all over the screen.*
+*Click ``||▶||`` to see moths all over the screen.*
 
 
 ![Code Ninjas](https://github.com/sbannonCN/bug-collector/blob/master/CN%20logo-.jpg?raw=true "Code Ninjas")
@@ -1102,7 +1102,7 @@ game.onUpdateInterval(500, function () {
 
 ---
 
-In ``||game.on game update||``, 500 is the interval value that sets how often 
+In ``||game:on game update||``, 500 is the interval value that sets how often 
 a bug appears.  
 
 ``|Test this out!|``
@@ -1140,13 +1140,13 @@ I computer
 
 ---
 
-- :paper plane: Open **Sprites** and drag ``||sprites.set (mySprite) kind||`` 
-into *the end* of ``||game.on game update||``. 
+- :paper plane: Open **Sprites** and drag ``||sprites:set (mySprite) kind||`` 
+into *the end* of ``||game:on game update||``. 
 
-- :mouse pointer: Click on ``||variables.mySprite||`` and select **moth** from the drop-down.
+- :mouse pointer: Click on ``||variables:mySprite||`` and select **moth** from the drop-down.
 
-- :mouse pointer: Click on ``||sprites.Player||`` and 
-select ``||sprites.Add a new kind...||``. Type **Bug** and click ``||loops.Ok||``.
+- :mouse pointer: Click on ``||sprites:Player||`` and 
+select ``||sprites:Add a new kind...||``. Type **Bug** and click ``||loops:Ok||``.
 
 ---
 
@@ -1331,10 +1331,10 @@ game.onUpdateInterval(500, function () {
 
 *Make something happen when Grace touches a bug.*
 
-- :paper plane: Open **Sprites** and drag ``||sprites.on (sprite) of kind [Player] overlaps||`` 
+- :paper plane: Open **Sprites** and drag ``||sprites:on (sprite) of kind [Player] overlaps||`` 
 onto the editor.
 
-- :mouse pointer: Click on *otherSprite's* kind ``||sprites.Player||`` and 
+- :mouse pointer: Click on *otherSprite's* kind ``||sprites:Player||`` and 
 select **Bug** from the drop-down menu.
 
 ---
@@ -1521,11 +1521,11 @@ game.onUpdateInterval(500, function () {
 
 ---
 
-- :paper plane: Open **Sprites** and drag ``||sprites.destroy (mySprite)||`` 
-into the ``||sprites.overlaps||`` container.
+- :paper plane: Open **Sprites** and drag ``||sprites:destroy (mySprite)||`` 
+into the ``||sprites:overlaps||`` container.
 
-- :mouse pointer: From the ``||sprites.overlaps||`` container, drag the 
-``||variables.(otherSprite)||`` bubble to replace ``||variables.(mySprite)||`` in destroy.
+- :mouse pointer: From the ``||sprites:overlaps||`` container, drag the 
+``||variables:(otherSprite)||`` bubble to replace ``||variables:(mySprite)||`` in destroy.
 
 
 
@@ -1533,7 +1533,7 @@ into the ``||sprites.overlaps||`` container.
 
 ---
 
-*Click ``||scene.▶||`` and overlap with a bug to see it disappear.*
+*Click ``||▶||`` and overlap with a bug to see it disappear.*
 
 
 ![Code Ninjas](https://github.com/sbannonCN/bug-collector/blob/master/CN%20logo-.jpg?raw=true "Code Ninjas")
@@ -1715,15 +1715,15 @@ game.onUpdateInterval(500, function () {
 
 ---
 
-- :headphone: Open **Music** and drag ``||music.play sound||`` 
-into the ``||sprites.overlaps||`` container.
+- :headphone: Open **Music** and drag ``||music:play sound||`` 
+into the ``||sprites:overlaps||`` container.
 
-- :mouse pointer: Click ``||music.ba ding||`` to select a sound from the drop-down 
+- :mouse pointer: Click ``||music:ba ding||`` to select a sound from the drop-down 
 menu.
 
 ---
 
-*Click ``||scene.▶||`` and overlap with a bug to hear a sound.*
+*Click ``||▶||`` and overlap with a bug to hear a sound.*
 
 
 ![Code Ninjas](https://github.com/sbannonCN/bug-collector/blob/master/CN%20logo-.jpg?raw=true "Code Ninjas")
@@ -1908,13 +1908,13 @@ game.onUpdateInterval(500, function () {
 
 ---
 
-- :info: Open **Info** and drag ``||info.set score||`` into ``||loops.on start||``.
+- :info: Open **Info** and drag ``||info:set score||`` into ``||loops:on start||``.
 
-- :info: Open **Info** and drag ``||info.change score||`` into ``||sprites.overlaps||`` container.
+- :info: Open **Info** and drag ``||info:change score||`` into ``||sprites:overlaps||`` container.
 
 ---
 
-*Click ``||scene.▶||`` and overlap with a bug to see the score increase.*
+*Click ``||▶||`` and overlap with a bug to see the score increase.*
 
 
 ![Code Ninjas](https://github.com/sbannonCN/bug-collector/blob/master/CN%20logo-.jpg?raw=true "Code Ninjas")
@@ -2099,14 +2099,14 @@ game.onUpdateInterval(500, function () {
 
 ---
 
-- :info: Open **Info** and drag ``||info.start countdown||`` into 
-``||loops.on start||``.
+- :info: Open **Info** and drag ``||info:start countdown||`` into 
+``||loops:on start||``.
 
 - :mouse pointer: Set the timer length using the number in the white bubble.
 
 ---
 
-*Click ``||scene.▶||`` and catch bugs until the timer ends and it's game over.*
+*Click ``||▶||`` and catch bugs until the timer ends and it's game over.*
 
 
 ![Code Ninjas](https://github.com/sbannonCN/bug-collector/blob/master/CN%20logo-.jpg?raw=true "Code Ninjas")
@@ -2291,18 +2291,18 @@ game.onUpdateInterval(500, function () {
 
 ---
 
-- :circle: Open **Game** and drag ``||game.splash||`` into *the top* of 
-``||loops.on start||``.  
+- :circle: Open **Game** and drag ``||game:splash||`` into *the top* of 
+``||loops:on start||``.  
 - :mouse pointer: Type the game's title into the white bubble.
 
 
-- :circle: Open **Game** and drag ``||game.show long text||`` under the splash 
+- :circle: Open **Game** and drag ``||game:show long text||`` under the splash 
 block.  
 - :mouse pointer: Type the directions for the game into the white bubble.
 
 ---
 
-*Click ``||scene.▶||`` to see the game title and instructions before the game starts.*
+*Click ``||▶||`` to see the game title and instructions before the game starts.*
 
 
 ![Code Ninjas](https://github.com/sbannonCN/bug-collector/blob/master/CN%20logo-.jpg?raw=true "Code Ninjas")
@@ -2494,10 +2494,10 @@ game.onUpdateInterval(500, function () {
 
 ``|Test this out!|``
 
-- In ``||game.show long text||``, click on **bottom** and select a position from the 
+- In ``||game:show long text||``, click on **bottom** and select a position from the 
 drop-down menu.
 
-- Open **Game** and drag ``||game.set dialog frame||`` *before* ``||game.show long text||``. 
+- Open **Game** and drag ``||game:set dialog frame||`` *before* ``||game:show long text||``. 
 Click on the grey oval to draw or choose a frame.
 
 ---
