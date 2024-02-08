@@ -735,7 +735,7 @@ game.onUpdateInterval(500, function () {
 ---
 
 - :mouse pointer: In the editor, click on ``||variables:[projectile]||`` and select 
-``||variables:Rename Variable...||``.  Type **moth** and click ``||loops.Ok||``.
+``||variables:Rename Variable...||``.  Type **moth** and click ``||loops:Ok||``.
 
 - :mouse pointer: Click the **grey oval** and go to the ``||sprites:My Assets||`` tab at the top. 
 Select the **moth** and click ``||loops:Done||``.
